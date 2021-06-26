@@ -7,7 +7,7 @@ import ScrollDownArrow from '../assets/images/scroll-down-arrow.svg';
 import Text from './Text';
 
 const WelcomeStyles = styled.div`
-  .hero {
+  .welcome {
     height: 100vh;
     min-height: 700px;
     width: 100%;
@@ -16,9 +16,9 @@ const WelcomeStyles = styled.div`
     align-items: center;
     justify-content: center;
     position: relative;
-    background-color: black; // this is temporary
+    background-color: white; // this is temporary
   }
-  .hero__heading {
+  .welcome__heading {
     font-size: 2rem;
     margin-bottom: -4rem;
     position: relative;
@@ -26,26 +26,31 @@ const WelcomeStyles = styled.div`
       display: inline-block;
       width: 100%;
     }
-    .hero__name {
+    .welcome__name {
+      display: flex;
       font-family: 'Montserrat SemiBold';
       font-size: 7rem;
-      color: var(--dark-bg); //change this
+      letter-spacing: 0.5rem;
+      left: 100px;
+      flex-direction: column;
+      gap: 2rem;
+      color: var(--deep-dark); //change this
     }
   }
-  .hero__img {
+  .welcome__img {
     max-width: 600px;
     width: 100%;
-    height: 300px;
-    right: 50px;
-    align-items: right;
+    height: 450px;
     margin: 0 auto;
-    border: 2px solid var(--gray-1); //ditto
+    margin-right: 10px;
+   // border: 2px solid var(--gray-1); //ditto
   }
-  .hero__info {
-    margin-top: -18rem;
+  .welcome__info {
+    margin-top: -27rem;
+    margin-right: 300px;
   }
-  .hero__social,
-  .hero__scrollDown {
+  .welcome__social,
+  .welcome__scrollDown {
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -53,14 +58,14 @@ const WelcomeStyles = styled.div`
     bottom: 20px;
     width: 50px;
   }
-  .hero__social {
+  .welcome__social {
     left: 50px;
   }
-  .hero__scrollDown {
+  .welcome__scrollDown {
     right: 50px;
   }
-  .hero__social__indicator,
-  .hero__scrollDown {
+  .welcome__social__indicator,
+  .welcome__scrollDown {
     width: 50px;
     p {
       font-size: 1.6rem;
@@ -75,12 +80,12 @@ const WelcomeStyles = styled.div`
       object-fit: contain;
     }
   }
-  .hero__scrollDown {
+  .welcome__scrollDown {
     img {
       max-height: 70px;
     }
   }
-  .hero__social__text {
+  .welcome__social__text {
     ul {
       li {
         margin-bottom: 1rem;
@@ -95,27 +100,27 @@ const WelcomeStyles = styled.div`
     }
   }
   @media only screen and (max-width: 768px) {
-    .hero {
+    .welcome {
       min-height: 750px;
     }
-    .hero__heading {
-      font-size: 1.4rem;
+    .welcome__heading {
+      font-size: 2.4rem;
       margin-bottom: -3rem;
-      .hero__name {
+      .welcome__name {
         font-size: 4.5rem;
       }
     }
-    .hero__img {
+    .welcome__img {
       height: 300px;
     }
-    .hero__info {
+    .welcome__info {
       margin-top: 3rem;
     }
-    .hero__social {
+    .welcome__social {
       left: 0px;
       bottom: -15%;
       width: 20px;
-      .hero__social__indicator {
+      .welcome__social__indicator {
         width: 20px;
         p {
           font-size: 1.2rem;
@@ -124,7 +129,7 @@ const WelcomeStyles = styled.div`
           max-height: 22px;
         }
       }
-      .hero__social__text {
+      .welcome__social__text {
         ul {
           li {
             a {
@@ -135,7 +140,7 @@ const WelcomeStyles = styled.div`
         }
       }
     }
-    .hero__scrollDown {
+    .welcome__scrollDown {
       right: 0;
       width: 20px;
       gap: 1rem;
@@ -149,56 +154,38 @@ const WelcomeStyles = styled.div`
 export default function WelcomeSection() {
   return (
     <WelcomeStyles>
-      <div className="hero">
+      <div className="welcome">
         <div className="container">
-          <h1 className="hero__heading">
-            <span>Hello, This is</span>
-            <span className="hero__name">Dahlia L.</span>
+          <h1 className="welcome__heading">
+            <span> Hello! I am </span>
+            <span className="welcome__name"> dahlia la pommeray </span>
           </h1>
-          <div className="hero__img">
-            <img src={HeroImg} alt="" />
+          <div className="welcome__img">
+            <img src={HeroImg} alt="Dahlia Drawing Image" />
           </div>
-          <div className="hero__info">
+          <div className="welcome__info">
             <Text />
-            <Button btnText="see my works" btnLink="/projects" />
+            <Button btnText="see my projects" btnLink="/projects" />
           </div>
-          <div className="hero__social">
-            <div className="hero__social__indicator">
+          <div className="welcome__social">
+            <div className="welcome__social__indicator">
               <p>Follow</p>
               <img src={SocialMediaArrow} alt="icon" />
             </div>
-            <div className="hero__social__text">
+            <div className="welcome__social__text">
               <ul>
                 <li>
                   <a
-                    href="http://facebook.com/webcifar"
+                    href="http://github.com/dahlial"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    FB
+                    GH
                   </a>
                 </li>
                 <li>
                   <a
-                    href="http://twitter.com/webcifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    TW
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://isntagram.com/web_cifar"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    IG
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="http://webcifar.com"
+                    href="http://linkedin.com/in/dahlialapommeray"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -208,7 +195,7 @@ export default function WelcomeSection() {
               </ul>
             </div>
           </div>
-          <div className="hero__scrollDown">
+          <div className="welcome__scrollDown">
             <p>Scroll</p>
             <img src={ScrollDownArrow} alt="ScrollDown Arrow" />
           </div>

@@ -1,38 +1,38 @@
 import React from 'react';
 import styled from 'styled-components';
-import Typed from 'react-typed';
+import Typewriter from "typewriter-effect";
 
 const PStyle = styled.div`
   max-width: 800px;
   margin: 0 auto;
-  font-size: 60px;
+  font-size: 25px;
+  font: white;
   line-height: 1.3em;
   @media only screen and (max-width: 768px) {
     font-size: 1.4rem;
   }
   .para {
-    font-size: 900px;
+    width: 400px;
+    font-size: 10px;
   }
 `;
 
 const textLines = [
-  'Current Computer Science Student',
+  'Computer Science Student',
   'Aspiring Software Engineer',
-  'Occasional Dancer',
+  'Persistent Dancer',
 ];
 
 export default function Text() {
   return (
-    <PStyle className="para">
-      <Typed
-        strings={textLines}
-        typeSpeed={40}
-        backSpeed={50}
-        attr="placeholder"
-        loop
-      >
-        <input type="text" />
-      </Typed>
+    <PStyle>
+    <Typewriter
+       options={{
+        strings: textLines,
+        autoStart: true,
+        loop: true,
+      }}
+       />
     </PStyle>
   );
 }
