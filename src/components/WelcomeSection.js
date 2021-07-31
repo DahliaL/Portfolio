@@ -46,6 +46,10 @@ const WelcomeStyles = styled.div`
    // border: 2px solid var(--gray-1); //ditto
   }
   .welcome__info {
+    margin-top: 0rem;
+    margin-right: 300px;
+  }
+  .moving_text {
     margin-top: -27rem;
     margin-right: 300px;
   }
@@ -114,7 +118,13 @@ const WelcomeStyles = styled.div`
       height: 300px;
     }
     .welcome__info {
-      margin-top: 3rem;
+      margin-top: 2rem;
+      margin-left: 8rem;
+    }
+    .moving_text {
+      margin-top: 1rem;
+      margin-left: 2rem;
+      width: 300px;
     }
     .welcome__social {
       left: 0px;
@@ -163,8 +173,9 @@ export default function WelcomeSection() {
           <div className="welcome__img">
             <img src={HeroImg} alt="Dahlia Drawing Image" />
           </div>
-          <div className="welcome__info">
-            <Text />
+            <div className="moving_text">
+            <Text /> </div>
+            <div className="welcome__info">
             <Button btnText="see my projects" btnLink="/projects" />
           </div>
           <div className="welcome__social">

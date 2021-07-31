@@ -1,9 +1,10 @@
 import { React, useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { CgSun } from 'react-icons/cg';
 import { HiMoon } from 'react-icons/hi';
 import { MdClose, MdMenu } from 'react-icons/md';
+import DahliaLogo from '../assets/images/dahlia-logo4.png';
 
 const NavMenuStyle = styled.div`
   position: fixed;
@@ -13,11 +14,21 @@ const NavMenuStyle = styled.div`
   width: 100%;
   padding: 1rem 0;
   background: ${(props) => props.theme.darkBG};
+  img {
+    position: fixed;
+    margin-left: 3rem;
+    margin-top: -1rem;
+    width: 70px;
+    height: 70px;
+    z-index: 100px;
+    display: flex;
+    }
   ul {
     max-width: 1200px;
     margin: 0 auto;
     width: 90%;
     text-align: center;
+    
     li {
       display: inline-block;
       border-radius: 8px;
@@ -38,6 +49,7 @@ const NavMenuStyle = styled.div`
       color: ${(props) => props.theme.activeBG};
     }
     button {
+      margin-left: 40px;
       cursor: pointer;
       height: 35px;
       width: 35px;
@@ -129,6 +141,9 @@ export default function NavMenu(props) {
       >
         <MdMenu />
       </div>
+      <Link className = "nav-title" to="/">
+                <img className = "nav-logo" src={ DahliaLogo } alt="Portfolio logo" />
+            </Link>
       <ul className={!showNav ? 'navItems hide-item' : 'navItems'}>
         <div
           className="closeNavIcon"
@@ -187,7 +202,7 @@ export default function NavMenu(props) {
             <li>Contact</li>{' '}
           </NavLink>
         </li>
-        <button type="button" onClick={() => changeTheme()}>
+        <button className="theme-mode" type="button" onClick={() => changeTheme()}>
           {icon}
         </button>
       </ul>
