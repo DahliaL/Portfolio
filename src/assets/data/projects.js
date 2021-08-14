@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
 // the images
-import Seasoned from '../images/SeasonedLogin.gif';
+import Seasoned from '../images/Seasoned.png';
 import Portfolio from '../images/PortfolioIMG.png';
 import DribbleData from '../images/DribbleData.jpg';
 import BinaryImage from '../images/BinaryImage.png';
