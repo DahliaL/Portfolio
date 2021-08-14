@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import MapImg from '../assets/images/map.png';
+import MapImg from '../assets/images/map.jpg';
 import PText from './PText';
 
 const MapStyles = styled.div`
@@ -17,7 +17,7 @@ const MapStyles = styled.div`
     right: 10%;
     bottom: 10%;
     padding: 2rem;
-    background: var(--deep-dark);
+    background: white;
     width: 100%;
     max-width: 300px;
     border-radius: 12px;
@@ -52,15 +52,15 @@ export default function Map() {
           <PText>Orlando, Florida</PText>
           <a
             className="map__card__link"
-            href="https://www.google.com/maps/place/GEC+More,+Chittagong/@22.3590818,91.8195583,17z/data=!3m1!4b1!4m5!3m4!1s0x30acd89aaa8239cd:0x6e65fa00001dd59f!8m2!3d22.3590715!4d91.8215486"
+            href="https://goo.gl/maps/wcfZfFZqUgaiSEuj6"
             target="_blank"
             rel="noreferrer"
           >
-            Open in google map
+            Open in Google Maps
           </a>
         </div>
       </div>
-      {/* <img src={MapImg} alt="Map" /> */}
+
     </MapStyles>
   );
 }

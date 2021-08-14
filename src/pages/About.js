@@ -140,8 +140,8 @@ export default function About() {
                 items={['Undergraduate Teaching Assistant for Software Engineering']}
               />
               <AboutInfoItem
-                title="August 2019 - May 2023"
-                items={['Started Bachelor Degree in Computer Science']}
+                title="August 2019"
+                items={['Started Bachelors Degree in Computer Science']}
               />
             </div>
           </div>
