@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Button from './Button';
 import PText from './PText';
 import SectionTitle from './SectionTitle';
-import AboutImg from '../assets/images/about-sec-img2.png';
 
 const AboutSectionStyles = styled.div`
   padding: 10rem 0;
@@ -16,6 +15,7 @@ const AboutSectionStyles = styled.div`
   .aboutSection__left,
   .aboutSection__right {
     flex: 1;
+    text-align: center;
   }
   .section-title {
     text-align: center;
@@ -75,9 +75,6 @@ export default function AboutSection() {
     return (
         <AboutSectionStyles>
         <div className="container">
-        <div className="aboutSection__left">
-            <img className="aboutImg" src={AboutImg} alt="Img" />
-          </div>
           <div className="aboutSection__right">
             <SectionTitle
               subheading="Just a brief introduction"
