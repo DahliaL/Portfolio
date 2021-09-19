@@ -14,7 +14,7 @@ const AboutSectionStyles = styled.div`
   }
   .aboutSection__left,
   .aboutSection__right {
-    flex: 1;
+    flex: 3;
     text-align: center;
   }
   .section-title {
@@ -22,7 +22,7 @@ const AboutSectionStyles = styled.div`
   }
   .para {
     margin-top: 2rem;
-    margin-left: 0;
+    margin-left: 2;
   }
   .aboutSection__buttons {
     display: flex;

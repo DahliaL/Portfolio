@@ -26,7 +26,7 @@ const ProjectSectionStyle = styled.div`
     position: absolute;
     height: 50px;
     width: 50px;
-    background: var(--deep-dark);
+    background: #f2f2f2;
     z-index: 10;
     right: 60px;
     left: auto;

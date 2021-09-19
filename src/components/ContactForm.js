@@ -16,7 +16,7 @@ const FormStyle = styled.form`
     font-size: 2rem;
     padding: 1.2rem;
     color: var(--gray-1);
-    background-color: beige;
+    background-color: #f2f2f2;
     outline: none;
     border: none;
     border-radius: 8px;
