@@ -103,7 +103,7 @@ export default function About() {
                   me the opportunity to do exactly that.
                 </PText>
               </div>
-              <Button btnText="Download Resume" btnLink="#" />
+              <Button btnText="Download Resume" btnLink="../assets/data/DahliaResume.pdf" />
             </div>
             <div className="right">
             <img src={AboutImg} alt="me" />

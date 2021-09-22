@@ -59,7 +59,7 @@ export default function Footer() {
         <div className="footer__col1">
           <h1 className="footer__col1__title">Dahlia La Pommeray</h1>
           <PText>
-            A Computer Science student hoping to becoming the best programmer that she can be!
+            Computer Science student on the path of becoming the best programmer that she can be
           </PText>
         </div>
         <div className="footer__col2">
@@ -94,8 +94,8 @@ export default function Footer() {
             heading="Contact Info"
             links={[
               {
-                title: 'd.lapommeray@knights.ucf.edu',
-                path: 'mailto:d.lapommeray@knights.ucf.edu',
+                title: 'dahlia.lapom@gmail.com',
+                path: 'mailto:dahlia.lapom@gmail.com',
               },
               {
                 title: 'Orlando, Florida',
