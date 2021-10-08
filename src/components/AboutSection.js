@@ -81,7 +81,7 @@ export default function AboutSection() {
               heading="About Me"
             />
             <PText>
-              I am a computer science and dance student at the University of 
+              I am a computer science and dance student at the University of Central
               Florida originally from Orlando, Florida. Simply put, I love to code. You can find me either
               creating an application, reading a rom-com, dancing, or watching Tangled. 
             </PText>
